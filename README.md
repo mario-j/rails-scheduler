@@ -8,7 +8,7 @@ Make sure your local environment is set up to run Rails 6.1.4.1 and Ruby 3.0.1 (
 
  - Open a terminal and clone the repo locally using ```git clone https://github.com/mario-j/rails-scheduler.git```
  - Navigate to the project using ```cd rails-scheduler```
- - Install dependencies using ```bundle install```
+ - Install dependencies using ```bundle install``` and ```yarn install```
  - Run the server using ```rails s```
 
 ## Layout
