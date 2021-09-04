@@ -1,24 +1,14 @@
-# README
+# Rails Scheduler
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple form to allow users to book appointment times.
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+ - Open a terminal and clone the repo locally using ```git clone```
+ - Navigate to the project using ```cd rails-scheduler```
+ - Install dependencies using ```bundle install```
+ - Run the server using ```rails s```
 
-* System dependencies
+## Layout
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The data used to populate the form is currently hardcoded in a JSON-like object. The form_builder.js file uses that data to build the form for the user to book a time with a coach.
