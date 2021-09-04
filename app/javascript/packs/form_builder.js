@@ -262,10 +262,12 @@ function setupBookButton() {
   document.getElementById('bookButton').addEventListener('click', function(event) {
     if (document.getElementById('time').value != 'No times available') {
       console.log("do stuff with form values");
-      console.log("Coach: ", document.getElementById('coaches').value);
-      console.log("Date: ", document.getElementById('date').value);
-      console.log("Time: ", document.getElementById('time').value);
-      Alert("test");
+      var coach = document.getElementById('coaches').value;
+      var date = document.getElementById('date').value;
+      var time = document.getElementById('time').value;
+      alert("Booked appointment with " + coach + " on " + date + " at " + time + "\n (This submission doesn't do any additional logic other than showing this alert)");
+    } else {
+      alert("Please select a valid date and time");
     }
   })
 }
