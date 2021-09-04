@@ -1,0 +1,29 @@
+<html>
+
+<head>
+  <title>Appname</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'home', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'form_builder', 'data-turbolinks-track': 'reload' %>
+
+</head>
+
+<body>
+
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+    <div class="row col-sm-12 col-md-12 col-lg-12 container">
+      <div class="label">Coach: </div>
+      <div id="coachContainer" class="col-sm-12 col-md-6 col-lg-6"></div>
+      <div class="label">Date: </div>
+      <div id="dateContainer" class="col-sm-12 col-md-6 col-lg-6"></div>
+      <div class="label">Time: </div>
+      <div id="timeContainer" class="col-sm-12 col-md-6 col-lg-6"></div>
+      <button class="button" onclick="bookAppointment(event)">Book Appointment</button>
+    </div>
+</body>
+</html>
