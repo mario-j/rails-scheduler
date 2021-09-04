@@ -148,7 +148,6 @@ var data = [
   }
 ];
 
-
 const JSONdata = JSON.parse(JSON.stringify(data));
 
 var selectedCoach;
@@ -158,6 +157,7 @@ document.addEventListener("turbolinks:load", function() {
   renderCoachesDropDown();
   renderDatePicker(selectedDate);
   renderTimeDropDown(selectedDate);
+  setupBookButton();
 });
 
 function renderCoachesDropDown() {
@@ -258,13 +258,16 @@ function generateRanges(start, end, timezone) {
   return ranges;
 }
 
-function bookAppointment(event) {
-  if (document.getElementById('time').value != 'No times available') {
-    console.log("do stuff with form values");
-    console.log("Coach: ", document.getElementById('coaches').value);
-    console.log("Date: ", document.getElementById('date').value);
-    console.log("Time: ", document.getElementById('time').value);
-  }
+function setupBookButton() {
+  document.getElementById('bookButton').addEventListener('click', function(event) {
+    if (document.getElementById('time').value != 'No times available') {
+      console.log("do stuff with form values");
+      console.log("Coach: ", document.getElementById('coaches').value);
+      console.log("Date: ", document.getElementById('date').value);
+      console.log("Time: ", document.getElementById('time').value);
+      Alert("test");
+    }
+  })
 }
 
 //Helper Functions
